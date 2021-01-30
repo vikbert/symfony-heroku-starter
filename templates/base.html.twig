@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="https://vikbert.github.io/pixss/build/styles/pixss.min.css">
+        {% block stylesheets %}{% endblock %}
+
+        {% block javascripts %}{% endblock %}
+    </head>
+    <body>
+    <header class="header">
+      <nav class="topbar">
+        <div class="container space-between">
+          <div class="emoji">✪</div>
+          <div class="emoji">👨🏻‍💻</div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="hero is-primary">
+        <div class="container">
+          <h1>Heroku Symfony Starter</h1>
+        </div>
+      </div>
+
+      {% block body %}{% endblock %}
+
+    </main>
+    </body>
+</html>
