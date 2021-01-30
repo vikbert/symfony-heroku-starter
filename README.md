@@ -15,7 +15,7 @@
 
 ---
 
-![](docs/symfony5.png)
+![](docs/heroku.png)
 
 ## Starting started
 
