@@ -34,7 +34,25 @@ curl -sS https://get.symfony.com/cli/installer | bash
 ## Open App `https://127.0.0.1:800*`
 ```bash
 symfony serve
+
+#[OK] Web server listening                                                                                              
+#The Web server is using PHP FPM 7.4.12                         
+#https://127.0.0.1:8000    
 ```
+
+## Deploy to `heroku`
+```bash
+heroku login
+heroku create
+heroku config:set SYMFONY_ENV=prod
+git push heroku master
+```
+
+Show the following logs
+```bash
+ 
+```
+
 
 ## licence
 
